@@ -9,11 +9,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.js"
+      "dest": "src/index.js"
     }
   ],
   "functions": {
-    "index.js": {
+    "src/index.js": {
       "maxDuration": 30
     }
   }
