@@ -23,7 +23,7 @@ app.use(
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-server.listen(PORT, () => {
+server.listen(PORT, async () => {
   console.log("server is running on PORT:" + PORT);
-  connectDB();
+  await connectDB();
 });
